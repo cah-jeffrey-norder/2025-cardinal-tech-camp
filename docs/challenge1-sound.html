@@ -17,14 +17,10 @@ Sounds
     gain (number|Pattern): sustain level (0 to 1)
     time (number|Pattern): release time in seconds
 
-    // attack 
-    note("c3 e3 f3 g3").attack("<0 .1 .5>")
-
-    // decay
-
-    // sustain
-
-    // release
+    // attack, decay, sustain, release
+    note("[e3 ~ f3 ~ f4]").sound("sine").attack(0).decay(1).sustain(.5).release(1)
+      
+    .scope()
 
       <img src="ADSR_parameter.svg.png" />
 
