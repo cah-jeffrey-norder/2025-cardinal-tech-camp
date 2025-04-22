@@ -79,7 +79,7 @@ SIGNALS
 CHORD LIST
     D:minor
 
-Characters
+Special Characters
     [] - play all notes in a single beat
     <> - Each Cycle
     ~  - rest

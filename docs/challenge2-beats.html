@@ -9,17 +9,29 @@
 <img src="drums.jpg" width="500"/>
 
 
-
   // Four on the Floor
   $: sound("[bd bd bd bd]").bank('RolandTR909')
 
   // Tildes are RESTS ~
-  $: s("[~ sd ~ [~ sd]]").bank('RolandTR909')
+  $: sound("[~ sd ~ [~ sd]]").bank('RolandTR909')
 
-  // Multipliers can make things go faster
-  $: s("[hh hh hh hh]*2").bank('RolandTR909')
+  // Multipliers (*) can make things go faster
+  $: sound("[hh hh hh hh]*2").bank('RolandTR909')
 
-  sound("bd hh sd [ht mt lt]")
+  $: sound("bd hh sd [ht mt lt]")
+
+Special Characters
+    [] - play all notes in a single beat
+    <> - Each Cycle
+    ~  - rest
+    *  - speed up
+    /  - slow down
+    !  - replicate
+    @  - elongate
+    ,  - parallel
+    $  - play in parallel threads
+    _  - mute a line
+    SPACE - sequence
 
 BANK LIST
     AkaiLinn
