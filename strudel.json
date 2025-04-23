@@ -1,5 +1,5 @@
 {
-    "_base": "https://raw.githubusercontent.com/cah-jeffrey-norder/2025-cardinal-tech-camp/main//",
+    "_base": "https://raw.githubusercontent.com/cah-jeffrey-norder/2025-cardinal-tech-camp/main/",
     "jeff": ["samples/check.wav"],
     "word": ["samples/word.wav"]
 }
