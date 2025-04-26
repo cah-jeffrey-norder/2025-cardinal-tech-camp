@@ -8,22 +8,20 @@
 <h1>Samples</h1>
 
 samples({
-    jeff: 'samples/check.wav',
-    word: 'samples/word.wav',
-    aadhya: 'samples/Aadhya.wav',
-    amina: 'samples/Amina.wav',
-    harshita: 'samples/harshita.wav',
-    julia: 'samples/Julia.wav',
-    neha: 'samples/neha.wav',
-    nithya: 'samples/Nithya.wav',
-    sofia: 'samples/Sofia.wav',
-    tanvi: 'samples/tanvi.wav',
-    vithi: 'samples/vithi.wav'
-    }, 'https://raw.githubusercontent.com/cah-jeffrey-norder/2025-cardinal-tech-camp/main/');
+  jeff: 'samples/check.wav',
+  word: 'samples/word.wav',
+  aadhya: 'samples/Aadhya.wav',
+  amina: 'samples/Amina.wav',
+  harshita: 'samples/harshita.wav',
+  julia: 'samples/Julia.wav',
+  neha: 'samples/neha.wav',
+  nithya: 'samples/Nithya.wav',
+  sofia: 'samples/Sofia.wav',
+  tanvi: 'samples/tanvi.wav',
+  vithi: 'samples/vithi.wav'
+  }, 'https://raw.githubusercontent.com/cah-jeffrey-norder/2025-cardinal-tech-camp/main/');
 
-    $: note("c2 d2 [e2 c3 c] c1").s("jeff")
-    $: note("~ ~ ~ c2").s("<word jeff>").pan("<0 1>").gain(5)
-
+  $: note("c2 e2").s("word")
 </pre>
   </body>
 </html>
