@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Julia</title>
+</head>
+<body>
+<pre>
+Julia :3
+
+first one :DDDDDD yay
+
+$: note("[e3 ~ f2 ~ f4]") .sound ("jazz") .attack(-15) .decay(4) .sustain(15) .release (-3) .scope ()
+$: note ("[e3 ~ f2 ~ f4]") .sound ( "metal" ) .attack(-14) .decay(3) .sustain(15) .release(-3) .scope ()
+$: note ("[e3 ~ f2 ~ f4]") .sound ( "casio" ) .attack (-14) .decay (4) .sustain(15) .release(-3) .scope ()   
+$: note ( "[g4 ~ e5 ~ f10]") .sound ( "space" ) .attack (-20) .decay (5) .sustain(15) .release(-4) .scope ()
+
+kowl :3
+
+$: sound (" [bd bd bd bd]") .bank('RolandTR909')
+$: sound (" [~ sd ~ [~ sd]]") . bank ('RolandTR909')
+$: sound ("[~ cp ~ [~ cp]]") .bank ('RolandTR909')
+$: sound ("[hh hh hh hh]") .bank ('RolandTR909')
+$: sound ("[oh oh oh oh]/2") .bank ('RolandTR909')
+$: sound ("[rd rd rd rd]") .bank ('RolandTR909')
+$: sound ("[~ sd ~ [~ sd]]/2") .bank ('RolandTR909')
+$: sound ("[~ lt ~ [~ lt]]"  ) .bank ('RolandTR909')
+$: sound ("[~ cb ~ [~ cb]]/2"  ) .bank ('RolandTR909')
+$: sound ("[sh sh sh sh]*2") .bank ('RolandTR707')
+$: sound ("[~ cb ~ [~ cb]]/2"  ) .bank ('RolandTR909')
+$: sound ("[bd sh bd sh]") .bank ('RolandTR707')
+$: sound ("[mt mt mt mt]") .bank ('RolandTR707')
+$: sound ("[ht ht ht ht]") .bank ('RolandTR707')
+$: sound ("[~  ~  ~ cr]") .bank ('RolandTR707')
+$: sound ("[~  cr  ~ ~]") .bank ('RolandTR707') .gain(.3)
+
+yayayya :3
+
+$: note(" c e d c f e") .sound ("piano")
+$: note (" d f e d g f") .sound ("wind") .gain(.4)
+$: note(" a a a a ") .sound ("piano") 
+$: note(" [a b a c a d a e a f a g]/2") .sound ("piano") .gain(.5)
+$: note(" ~ ~ e2 ") .sound ("wind") 
+$: note(" ~ d2 ~ ") .sound ("wind") 
+$: note(" a2 ~ ~ ") .sound ("wind") 
+$: note(" a2 ~ ~ ") .sound ("wind") 
+$: note(" ~ d3 ~ ") .sound ("wind") 
+$: note(" ~ ~ e4 ") .sound ("wind") 
+$: note(" c e d c f e") .sound ("casio") .gain(.2)
+$: note(" c e d c f e") .sound ("metal") .gain(.5)
+$: note(" c e d c f e") .sound ("east") 
+$: note(" ~ c ~ a ~ c") .sound ("casio") .gain(.5)
+$: note(" c e d c f e") .sound ("insect") .gain(.3)
+$: note(" c e d c f e") .sound ("metal") .gain(2)
+$: note(" a a a a a a") .sound ("piano")       
+
+yayayay 2.0 
+
+$: note(" c e d c f e") .sound ("piano")
+$: note (" d f e d g f") .sound ("wind") .gain(.4)
+$: note(" a a a a ") .sound ("piano") 
+$: note(" [a b a c a d a e a f a g]/2") .sound ("piano") .gain(.5)
+$: note(" ~ ~ e2 ") .sound ("wind") 
+$: note(" ~ d2 ~ ") .sound ("wind") 
+$: note(" a2 ~ ~ ") .sound ("wind") 
+$: note(" a2 ~ ~ ") .sound ("wind") 
+$: note(" ~ d3 ~ ") .sound ("wind") 
+$: note(" ~ ~ e4 ") .sound ("wind") 
+$: note(" c e d c f e") .sound ("casio") .gain(.2)
+$: note(" c e d c f e") .sound ("metal") .gain(.5)
+$: note(" c e d c f e") .sound ("east") 
+$: note(" ~ c ~ a ~ c") .sound ("casio") .gain(.5)
+$: note(" c e d c f e") .sound ("insect") .gain(.3)
+$: note(" c e d c f e") .sound ("metal") .gain(2)
+$: note(" a a a a a a") .sound ("piano")      
+$: note(" a b a b a b") .sound ("piano")       
+$: note(" c a c a c a") .sound ("piano")  
+$: note(" a a a a a a") .sound ("piano")       
+$: note(" c e d c f e") .sound ("piano")
+
+clock :3
+
+ $: note (" e,a,e,a,b,c,e,a,b,c ").sound ("lt")
+$: note (" [g e g e f d g e g g  ]/2.75").sound ("lt").add(-10)
+$: note (" [e a e a b c e a b c ] /2.75") .sound ("piano") .lpf(400)
+$: note (" [c f c f g a c f g a  ] /2.75") .sound ("metal")
+$: note (" [~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ g g e b e] /6.5 ").sound ("lt")  .room(2)
+ $: note (" [a a a a a a a a a a a a a a a a a a a a a a a a a]").sound ("metal") .lpf (775)
+
+quack (voices) 
+samples({
+  jeff: 'samples/check.wav',
+  word: 'samples/word.wav',
+  aadhya: 'samples/Aadhya.wav',
+  amina: 'samples/Amina.wav',
+  harshita: 'samples/harshita.wav',
+  julia: 'samples/Julia.wav',
+  neha: 'samples/neha.wav',
+  nithya: 'samples/Nithya.wav',
+  sofia: 'samples/Sofia.wav',
+  tanvi: 'samples/tanvi.wav',
+  vithi: 'samples/vithi.wav'
+  }, 'https://raw.githubusercontent.com/cah-jeffrey-norder/2025-cardinal-tech-camp/main/');
+
+  $: note("c2 e2").s("word")
+
+final quack
+
+$: note (" [~ ~  e ~ ~ ~ ~  c]") .sound ("crow") 
+  $: note (" ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ g") .sound (" bd") .lpf(500) 
+  $: note (" g b b e g b b c g") .sound ("east") .lpf(700)
+samples({
+  jeff: 'samples/check.wav',
+  word: 'samples/word.wav',
+  aadhya: 'samples/Aadhya.wav',
+  amina: 'samples/Amina.wav',
+  harshita: 'samples/harshita.wav',
+  julia: 'samples/Julia.wav',
+  neha: 'samples/neha.wav',
+  nithya: 'samples/Nithya.wav',
+  sofia: 'samples/Sofia.wav',
+  tanvi: 'samples/tanvi.wav',
+  vithi: 'samples/vithi.wav'
+  }, 'https://raw.githubusercontent.com/cah-jeffrey-norder/2025-cardinal-tech-camp/main/');
+
+  $: note("c2 e2").s("julia")
+$: sound (" tb ~ ~ ~ ~ ~ ~ ")
+$: sound (" ~ casio ~ ~ ~ ~ ~ ")
+$: sound (" ~ ~ wind~ ~ ~ ~ ")
+$: sound (" ~ ~ ~ jazz ~ ~ ~ ")
+$: sound (" ~ ~ ~ ~ metal ~ ~ ")
+$: sound (" ~ ~ ~ ~ ~ wind ~ ")
+$: sound (" ~ ~ ~ ~ ~ ~ insect ")
+samples({
+  jeff: 'samples/check.wav',
+  word: 'samples/word.wav',
+  aadhya: 'samples/Aadhya.wav',
+  amina: 'samples/Amina.wav',
+  harshita: 'samples/harshita.wav',
+  julia: 'samples/Julia.wav',
+  neha: 'samples/neha.wav',
+  nithya: 'samples/Nithya.wav',
+  sofia: 'samples/Sofia.wav',
+  tanvi: 'samples/tanvi.wav',
+  vithi: 'samples/vithi.wav'
+  }, 'https://raw.githubusercontent.com/cah-jeffrey-norder/2025-cardinal-tech-camp/main/');
+
+   $: note("f2 g2").s("sofia") .gain(sine) 
+
+</pre>
+</body>
+</html>

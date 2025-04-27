@@ -1,5 +1,5 @@
 Keep Doing
-    Timothy - the rubber duck
+    Timothy - the rubber duck, king of Cardinal
     Splitters
     New Headphones
     Sprint Cycles
@@ -10,13 +10,21 @@ Keep Doing
         10min - Break
     3 Sprint Cycles in the Morning
     3 Sprint Cycles at the end
+    Agile Coach
+    Engaging Retros
+    Non-Cardinal imaged laptops
+    Guest Network (somewhat instable early)
 
 Start Doing
     Give a live coding demo Friday Night
     Give better code for sync of music
     Stress the importance of exactness in code
+    Name Signs in front of their Computers
 
 Stop Doing
     Voice recordings - They hated it
+
+Watch Out
+    Guest networking cutting out
 
 

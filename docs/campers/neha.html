@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Neha</title>
+</head>
+<body>
+<pre>
+Neha - 
+
+SPRINT 1 - 
+$: note("[e2 ~ f3 ~ f4 ~ d4 ~ c4 ~ a1]").sound("piano").attack(1).decay(1).sustain(.5).release(1).scope()
+$: note("[f2 ~ e3 ~ d4 ~ f4 ~ A4 ~ c1]").sound("sine").attack(1).decay(.5).sustain(.5).release(.5).scope()
+$: note("[f2 ~ e3 ~ d4 ~ f4 ~ A4 ~ c1 ~ d3]").sound("gm_acoustic_bass").attack(1).decay(.5).sustain(.5).release(.5).scope()
+$: note("[f2 ~ e3 ~ d4 ~ a4 ~ A4 ~ c1]").sound("piano").attack(1).decay(.5).sustain(.5).release(.5).scope()
+
+SPRINT 2 - 
+// Four on the Floor
+$: sound("[bd@2 bc bd bd]").bank('RolandTR909')
+// Extra
+$: note("[f2 ~ e3 ~ d4 ~ f4 ~ A4 ~ c1 ~ d3]").sound("gm_acoustic_bass").attack(1).decay(.5).sustain(.5).release(.5).scope()
+$: note("[f2 ~ e3 ~ d4 ~ a4 ~ A4 ~ c1]").sound("piano").attack(.5).decay(.5).sustain(.5).release(.5).scope()
+$: note("[G G E G A G E D]").sound("piano").attack(.5).decay(.5).sustain(.5).release(.5).scope().gain(0.2)
+//new
+// Four on the Floor2)
+$: sound("[tb tb tb tb]").bank('RolandTR909')
+$: sound("[cp cp cp cp]").bank('RolandTR808').gain(.1)
+$: sound("bd hh sd [tb oh hh]").gain(.25)
+$: note("[F2 G3 A4 E4]").sound("piano").attack(1).decay(.5).sustain(.5).release(.5).scope()
+
+Sprint 3- (tanvi neha nithya)
+$: note("c d e f g a b c4").sound("piano").gain(0.75)
+$: note("c4 b a g f e d c").sound("piano").gain(0.75)
+$: sound("[bd bc bd bd]").bank('RolandTR909').gain(0.5)
+$: sound("[bd bc bd bd bd bd bd bd]").bank('RolandTR909').gain(0.75)
+$: sound("[cp cp cp cp]").bank('RolandTR808').gain(.1)
+$: sound("bd hh sd [tb oh hh]").gain(.25)
+$: ("0 2 4 <[6,8] [7,9]>").scale("C:minor").sound("piano")
+$: note("[e5 ~ f5 ~ f4 ~ e5 ~ c4 ~ c3 ~ b5 ~ c5]").sound("gm_eletric_guitar_muted piano").attack(0).decay(1).sustain(.5).release(1).scope()
+
+
+Sprint 4 - try again
+
+// melody
+$: note("c4 e4 g4 a4 f4 e4 d4 c4 g4 a4 f4 e4 d4 c4 e4 g4").sound("piano").gain(2).speed("<0.75>")
+//$: note("[a, a, a] [c, c, c]").sound("piano")
+//drums
+$: sound("[bd bd bd bd]").bank('RolandTR909').gain(0.1)
+$: note("c d e f g a b c4").sound("piano").gain(0.75)
+$: note("c4 b a g f e d c").sound("piano").gain(0.75)
+$: sound("[bd bc bd bd]").bank('RolandTR909').gain(0.5)
+$: sound("[bd bc bd bd bd bd bd bd]").bank('RolandTR909').gain(0.75)
+$: sound("[cp cp cp cp]").bank('RolandTR808').gain(.1)
+$: sound("bd hh sd [tb oh hh]").gain(.25)
+//$: ("0 2 4 <[6,8] [7,9]>").scale("C:minor").sound("piano")
+$: note("[e5 ~ f5 ~ f4 ~ e5 ~ c4 ~ c3 ~ b5 ~ c5]").sound("gm_eletric_guitar_muted piano").attack(0).decay(1).sustain(.5).release(1).scope()
+$: sound("piano").chord("<Am C D F Am E Am E>").voicing()
+//$: note("[c3, eb3, g3] [f3,a3,c4]").sound("piano")
+$: sound("[bd ht bd bd ht bd ht sh cb tb bd bd]").bank('RolandTR909').gain(0.75)
+
+
+
+
+Sprint 5 - simplifying
+$: note("c4 e4 g4 a4 f4 e4 d4 c4 g4 a4 f4 e4 d4 c4 e4 g4").sound("piano").gain(2).speed("<0.13>")
+$: sound("[bd bd bd bd]").bank('RolandTR909').gain(0.1)
+$: note("c d e f g a b c4").sound("piano").gain(0.5)
+$: note("c4 b a g f e d c").sound("piano").gain(0.75)
+$: sound("[cp cp cp cp]").bank('RolandTR808').gain(.1)
+
+</pre>
+</body>
+</html>

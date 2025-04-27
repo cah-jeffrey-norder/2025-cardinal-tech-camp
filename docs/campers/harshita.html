@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Aadhya</title>
+</head>
+<body>
+<pre>
+Harshita:
+ Not for song: Example from camp; 
+$: note("[e3 ~ f3 ~ f4]").sound("piano").attack(0).decay(1.).sustain(.5).release(1).scope()
+
+
+Sound: 
+$: note("[b3 ~ f1 ~ a5]").sound("piano").attack(0).decay(1.).sustain(.5).release(1).scope().attack(.5)
+
+
+
+Beat: 
+$: sound (" [ bd bd cb hh hh hh tb oh   ]").bank('Akailinn') 
+$: sound (" [cp hh cp ]").bank ('ViscoSpaceDrum')
+$: sound (" [sh hh sh ]").bank ('RolandTr707')
+$: sound (" [rd rd rd] ").bank ('RolandTR707')
+$: sound (" [sd sd sd] ").bank ('RhythmAce')
+
+Notes:
+$: note("0 2 4 <[6,8] [7.9]>").scale("piano").gain(.5)
+
+Chord/Effects: 
+$: sound("gm_acoustic_bass").chord("<Am c d e r Am e e>").voicing().gain(1)._spectrum()
+
+Samples:
+samples({
+  jeff: 'samples/check.wav',
+  word: 'samples/word.wav',
+  aadhya: 'samples/Aadhya.wav',
+  amina: 'samples/Amina.wav',
+  harshita: 'samples/harshita.wav',
+  julia: 'samples/Julia.wav',
+  neha: 'samples/neha.wav',
+  nithya: 'samples/Nithya.wav',
+  sofia: 'samples/Sofia.wav',
+  tanvi: 'samples/tanvi.wav',
+  vithi: 'samples/vithi.wav'
+  }, 'https://raw.githubusercontent.com/cah-jeffrey-norder/2025-cardinal-tech-camp/main/');
+
+  $: note("c2 e2").s("harshita")
+</pre>
+</body>
+</html>

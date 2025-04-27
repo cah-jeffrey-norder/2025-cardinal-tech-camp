@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Amina</title>
+</head>
+<body>
+<pre>
+Amina
+
+Sprint 1: Sound
+$: note("[e3 ~ f2 ~ f4]").sound("triangle").attack(3).decay(3).sustain(5).release(1).scope()
+$: note("[e3 ~ f3 ~ f4]").sound("sine").attack(3).decay(2).sustain(5).release(1).scope()
+$: note("[e3 ~ f3 ~ f4]").sound("triangle").attack(1).decay(1).sustain(5).release(2).scope()
+$: note("[e3 ~ f3 ~ f4]").sound("sine").attack(2).decay(3).sustain(5).release(1).scope()
+
+Sprint 2: Beats
+$: sound("[lt bd rd lt bd]*3").bank('ViscoSpaceDrum')
+$: sound("[ht bd mt lt bd sd] *4").bank('RhythmAce')
+$: sound("[hh hh cb ltrd cb bd mt]").bank('RolandTR808')
+$: sound("[rd cr cr ht mt lt cp ]").bank('AkaiLinn')
+$: sound("[cp ~ cp ~ cp]").bank('RolandTR707')
+$: sound("[lt mt ht lt mt ht lt mt ht]").bank('AkaiLinn')
+$: sound("[sh tb sd sd sd cb]").bank('ViscoSpaceDrum')
+$: sound("[cr cr hh ~ hh ~ oh]").bank('RhythAce')
+$: sound("[tb cb sh]*5").bank('RhythmAce')
+$: sound("[tb cb sh]*4").bank('RolandTR909')
+$: sound("[cr@ cr]*6").bank('RhythmAce')
+//AkaiLinn
+//RhythmAce
+//RolandTR808
+//RolandTR707
+//ViscoSpaceDrum
+
+Sprint 3: Notes
+note("ab3# ~ bb# ~ab# b# ~ ab# bb4# ab3# ~ bb# ~ab# b# ~ ab# bb4# ab3# ~ bb# ~ab# b# ~ ab# bb4# a a a a b b b b4").sound("piano").cpm(8)
+
+Sprint 4: Chords and Effects
+$: note("a [a,b,b,bb,ab] a b [ab,b,bb] bb a bb# a# bb2").sound("piano")
+$: note("a").sound("wind")
+$: note("[d,c,ec] e a b cb2").sound("piano")
+
+Sprint 5: Samples
+samples({
+  jeff: 'samples/check.wav',
+  word: 'samples/word.wav',
+  aadhya: 'samples/Aadhya.wav',
+  amina: 'samples/Amina.wav',
+  harshita: 'samples/harshita.wav',
+  julia: 'samples/Julia.wav',
+  neha: 'samples/neha.wav',
+  nithya: 'samples/Nithya.wav',
+  sofia: 'samples/Sofia.wav',
+  tanvi: 'samples/tanvi.wav',
+  vithi: 'samples/vithi.wav'
+  }, 'https://raw.githubusercontent.com/cah-jeffrey-norder/2025-cardinal-tech-camp/main/');
+
+  //$: note("g2 ~ ~ e2 ~ ~ f2 ~ ~ d2 ~ ~ c2 ~ ~ b2 ~ ~ a").s("amina").cpm(20) DON'T PLAY THIS ONE!
+</pre>
+</body>
+</html>

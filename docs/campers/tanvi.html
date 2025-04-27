@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Tanvi</title>
+</head>
+<body>
+<pre>
+Tanvi
+1.SOUND
+ $: note("[e5 ~ f5 ~ f4 ~ e5 ~ a4 ~ a4 ~ f5 ~ a5]"). sound("gm_electric_guitar_muted piano").attack(0). decay(1). sustain(.5). release(1). scope()
+
+2.BEATS
+$: sound("[bd ht bd bd ht bd ht sh cb tb bd bd]").bank('RolandTR909')
+$: sound("[sd bd sd bd]").bank('RolandTR909')
+$: note("[e5 ~ f5 ~ f4 ~ e5 ~ a4 ~ a4 ~ f5 ~ a5]"). sound("gm_electric_guitar_muted piano").attack(0). decay(1). sustain(.5). release(1). scope()
+$: note("[f4 ~ f4 ~ f4 ~ f4]"). sound("triangle").attack(0). decay(1). sustain(.5). release(1). scope().gain(.5)
+$: sound("[sd sd sd sd]").bank('RolandTR909')
+
+3. NOTES
+$: note("c d e f g a b c4").sound("piano")
+$: note("c4 b a g f e d c").sound("piano")
+$: sound("[bd bd bd bd]").bank('RolandTR909').gain(.5)
+
+4. CHORDS/SOUND EFFECTS
+$: note("[a,a,a] [a,a,a]").sound("piano").lpf(800) // low pass filter (parameter).gain(.8)
+$: sound("[bd ht bd bd ht bd ht sh cb tb bd bd]").bank('RolandTR909')  
+$: note("[e5 ~ f5 ~ f4 ~ e5 ~ a4 ~ a4 ~ f5 ~ a5]"). sound("piano").attack(0). decay(1). sustain(.5). release(1). scope()
+
+5. 
+$: sound("[bd ht bd bd ht bd ht sh cb tb bd bd]").bank('RolandTR909')
+$: sound("[sd bd sd bd]").bank('RolandTR909')
+$: note("[f4 ~ f4 ~ f4 ~ f4]"). sound("triangle").attack(0). decay(1). sustain(.5). release(1). scope().gain(.5)
+
+6. SAMPLES
+samples({
+  jeff: 'samples/check.wav',
+  word: 'samples/word.wav',
+  aadhya: 'samples/Aadhya.wav',
+  amina: 'samples/Amina.wav',
+  harshita: 'samples/harshita.wav',
+  julia: 'samples/Julia.wav',
+  neha: 'samples/neha.wav',
+  nithya: 'samples/Nithya.wav',
+  sofia: 'samples/Sofia.wav',
+  tanvi: 'samples/tanvi.wav',
+  vithi: 'samples/vithi.wav'
+  }, 'https://raw.githubusercontent.com/cah-jeffrey-norder/2025-cardinal-tech-camp/main/');
+
+$: note("c2 e2").s("tanvi")
+$: sound("[bd ht bd bd ht bd ht sh cb tb bd bd]").bank('RolandTR909')
+$: sound("[sd bd sd bd]").bank('RolandTR909')
+$: note("[f4 ~ f4 ~ f4 ~ f4]"). sound("triangle").attack(0). decay(1). sustain(.5). release(1). scope().gain(.5)
+
+7. COMPOSITION
+
+</pre>
+</body>
+</html>

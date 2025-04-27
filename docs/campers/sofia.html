@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Sofia</title>
+</head>
+<body>
+<pre>
+Sofia's
+
+1st version - Sound
+
+$: note("[a6 ~ c7 ~ d6 ~ f7 ~ a6 ~ c7 ~ d6 ~ f7]").sound("piano").attack(0).decay(1).sustain(.25).release(.25).scope()
+$: note("[g1 ~ f1 ~ e1 ~ f1]").sound("gm_acoustic_bass").attack(0).decay(1).sustain(.25).release(.25).scope()
+$: note("[a5 ~ f4 ~ g4]").sound("gm_electric_guitar_muted").attack(0).decay(1).sustain(.25).release(.25).scope()
+
+2nd version - Beats + Sound
+
+$: note("[a6 ~ c7 ~ d6 ~ f7 ~ a6 ~ c7 ~ d6 ~ f6]").sound("piano").attack(0).decay(1).sustain(.25).release(.25).scope()
+$: note("[g1 ~ f1 ~ e1 ~ f1]").sound("gm_acoustic_bass").attack(0).decay(1).sustain(.25).release(.25).scope()
+$: note("[c5 ~ f6 ~ g5]").sound("gm_electric_guitar_muted").attack(0).decay(1).sustain(.25).release(.25).scope()
+$: sound("[bd bd bd bd]").bank( 'ViscoSpaceDrum')
+$: sound("[hh hh hh hh]*2").bank( 'RolandTR909')
+$: sound("[sh mt cr bd]").bank('ViscoSpaceDrum')
+
+
+3rd version - Notes + Beats + Sound
+
+$: note("[a6 ~ c7 ~ d6 ~ f7 ~ a6 ~ c7 ~ d6 ~ f6]").sound("piano").attack(0).decay(1).sustain(.25).release(.25).scope()
+$: note("[g1 ~ f1 ~ e1 ~ f1]").sound("gm_acoustic_bass").attack(0).decay(1).sustain(.25).release(.25).scope()
+$: note("[c5 ~ f6 ~ g5]").sound("gm_electric_guitar_muted").attack(0).decay(1).sustain(.25).release(.25).scope()
+$: sound("[bd bd bd bd]").bank( 'ViscoSpaceDrum')
+$: sound("[hh hh hh hh]*2").bank( 'RolandTR909')
+$: sound("[ tb cr bd cr]").bank('ViscoSpaceDrum')
+$: note("a d e a b f b c5").sound("piano")
+$: note("a a a a a a a a").sound("piano")
+
+4th version - Effects + Chords + Sounds + Notes + Beats
+
+$: note("[a6 ~ c7 ~ d6 ~ f7 ~ a6 ~ c7 ~ d6 ~ f6]").sound("piano").attack(0).decay(1).sustain(.25).release(.25).scope().lpf(700)
+$: note("[g1 ~ f1 ~ e1 ~ f1]").sound("gm_acoustic_bass").attack(0).decay(1).sustain(.25).release(.25).scope()
+$: note("[c5 ~ f6 ~ g5]").sound("gm_electric_guitar_muted").attack(0).decay(1).sustain(.25).release(.25).scope().lpf(700)
+$: sound("[bd bd bd bd]").bank( 'ViscoSpaceDrum').lpf(800)
+$: note("a d e a b f b c5").sound("piano").lpf(800)
+$: note ("[c4,e6,g5] f3,a3,c4").sound("piano").lpf(800)
+
+
+</pre>
+</body>
+</html>
