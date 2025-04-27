@@ -1,4 +1,6 @@
 Keep Doing
+    Agile Coach
+    Physical Timer
     Timothy - the rubber duck, king of Cardinal
     Splitters
     New Headphones
@@ -9,20 +11,23 @@ Keep Doing
         10min - Retro
         10min - Break
     3 Sprint Cycles in the Morning
-    3 Sprint Cycles at the end
-    Agile Coach
+    3 Sprint Cycles in the Afternoon
+    Final Retro
     Engaging Retros
     Non-Cardinal imaged laptops
     Guest Network (somewhat instable early)
+    Presentation Medley
 
 Start Doing
     Give a live coding demo Friday Night
     Give better code for sync of music
     Stress the importance of exactness in code
     Name Signs in front of their Computers
+        Let them decorate
 
 Stop Doing
     Voice recordings - They hated it
+    Replace with .mousex() and .mousey()
 
 Watch Out
     Guest networking cutting out
