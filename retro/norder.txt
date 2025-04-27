@@ -17,6 +17,8 @@ Keep Doing
     Non-Cardinal imaged laptops
     Guest Network (somewhat instable early)
     Presentation Medley
+    Separate Tabs for each student for presentation
+    Save file in each computer
 
 Start Doing
     Give a live coding demo Friday Night
