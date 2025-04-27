@@ -24,6 +24,7 @@ Start Doing
     Give a live coding demo Friday Night
     Give better code for sync of music
     Stress the importance of exactness in code
+    Explain .gain() better.  Lots of questions about volume
     Name Signs in front of their Computers
         Let them decorate
 
