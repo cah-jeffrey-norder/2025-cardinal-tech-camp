@@ -3,7 +3,7 @@ Keep Doing
     Physical Timer
     Timothy - the rubber duck, king of Cardinal
     Splitters
-    New Headphones
+    Free Earbuds
     Sprint Cycles
         5min - Stand Up
         25min - Do the work
@@ -25,6 +25,7 @@ Start Doing
     Give better code for sync of music
     Stress the importance of exactness in code
     Explain .gain() better.  Lots of questions about volume
+        AKA MORE COWBELL
     Name Signs in front of their Computers
         Let them decorate
 
